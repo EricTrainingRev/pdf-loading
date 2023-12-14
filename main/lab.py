@@ -54,19 +54,15 @@ print(adventure_films)
 def load_a_text_file(path: str):
     # TODO: implement the function so that a text file can be loaded via the TextLoader class and the document
     #       returned after loading
-    loader = TextLoader(path)
-    return loader.load()
+    pass
 
 
 def load_a_pdf_file(path: str):
     # TODO: implement the function so that a pdf file can be loaded via the PyPDFLoader class and the document
     #       returned after loading
-    from langchain.document_loaders import PyPDFLoader
-    loader = PyPDFLoader(path)
-    return loader.load()
+    pass
 
 def load_csv_files_only_from_directory(path: str):
     # TODO: implement the function so that only csv files are uploaded from a directory and the documents
-    #       returned after loading
-    loader = DirectoryLoader(path, show_progress=True, glob="**/*.csv", loader_cls=CSVLoader)
-    return loader.load()
+    #       returned after loading. Use the DirectoryLoader class as your primary loader
+    pass
